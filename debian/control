@@ -1,4 +1,4 @@
-Source: gxde-testing-source
+Source: gxde-bpo-source
 Section: utils
 Priority: optional
 Maintainer: gfdgd_xi <3025613752@qq.com>
@@ -6,11 +6,13 @@ Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
 Standards-Version: 4.6.2
-Homepage: https://gitee.com/GXDE-OS/gxde-testing-source
+Homepage: https://gitee.com/GXDE-OS/gxde-bpo-source
 
-Package: gxde-testing-source
-Architecture: all
+Package: gxde-bpo-source
+Architecture: i386 amd64 arm64 mips64el
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
-Description: GXDE Testing Source
+ systemd (>= 254.22-1~bpo12+1),
+ systemd (<< 257.2-2)
+Description: GXDE Backport Source

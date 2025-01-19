@@ -4,5 +4,5 @@ build:
 install:
 	mkdir -p $(DESTDIR)/etc/apt/trusted.gpg.d/
 	mkdir -p $(DESTDIR)/etc/apt/sources.list.d/
-	cp -rv gxde-testing.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde-testing.gpg
-	cp -rv gxde-testing.list $(DESTDIR)/etc/apt/sources.list.d/gxde-testing.list
+	cp -rv gxde-bpo.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde-bpo.gpg
+	cp -rv gxde-bpo.list $(DESTDIR)/etc/apt/sources.list.d/gxde-bpo.list
